@@ -1,0 +1,363 @@
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  overflow: hidden;
+}
+header,
+footer {
+  background: #fff;
+  color: #000;
+  padding: 1em;
+  text-align: center;
+}
+header {
+  height: 50px;
+  position: relative;
+}
+
+header nav {
+  margin-top: 20px;
+}
+nav a {
+  font-size: 20px;
+  margin: 0 15px;
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #7daa42;
+}
+
+.hero {
+  background: url("img/banner.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: calc(80vh - 50px);
+  width: 100vw;
+  padding: 100px 20px;
+  text-align: center;
+  -webkit-mask-image: url("img/brush.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+  -webkit-mask-size: 96%;
+  mask-image: url("img/brush.png");
+
+  background-attachment: fixed;
+  mask-repeat: no-repeat;
+  mask-position: top;
+  mask-size: 96%;
+}
+.hero h1 {
+  font-size: 50px;
+}
+.container {
+  padding: 20px;
+}
+.container .text p {
+  font-size: 20px;
+}
+.container h1 {
+  color: #446507;
+}
+.container .contain {
+  display: flex;
+  align-items: center;
+  height: 66vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.contain .text {
+  width: 35%;
+  padding-left: 25px;
+}
+
+.contain .img {
+  width: 65%;
+  height: 100%;
+  background: url("img/c1.jpg") no-repeat bottom center;
+  -webkit-mask-image: url("img/brush2.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 85%;
+  opacity: 0.9;
+}
+
+.container h1 {
+  font-size: 35px;
+}
+.container.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+  transition: 0.2s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.contain .left {
+  width: 62%;
+  height: 100%;
+  background-image: url("img/c2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 60%;
+  mask-image: url("img/brush2.png");
+  mask-repeat: no-repeat;
+  mask-size: 75%;
+  opacity: 0.94;
+  mask-position: center;
+}
+.text.rght {
+  height: 100%;
+  width: 38%;
+}
+p.right {
+  margin-right: 25%;
+}
+
+.contact {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  color: #000;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url("img/banner.jpg") no-repeat;
+  mask-image: url("img/frame.png");
+  background-attachment: fixed;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: 10% 10%;
+}
+.ourContact {
+  margin-top: 0%;
+  color: #ffffffab;
+  margin-left: -10%;
+  font-size: 20px;
+}
+.messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 12px 80px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  border-bottom: 1px solid #375500;
+  margin: 10px 0px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn {
+  margin-top: 5px;
+  padding: 10px 50px;
+  font-size: 18px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  transition: 0.6s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  height: 50vh;
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  background: url("img/3.jpg") no-repeat;
+  background-position: 10% 88%;
+  background-size: cover;
+  margin-top: 10vh;
+  position: relative;
+}
+
+p a {
+  font-size: 20px;
+  color: #fff;
+  margin: 30px;
+  text-decoration: none;
+}
+footer .para {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-45%, -5%);
+}
+
+footer p a:hover {
+  color: #7daa42;
+}
+
+@media (max-width: 600px) {
+  header nav {
+    margin-top: 10px;
+  }
+  nav a {
+    font-size: 15px;
+    margin: 0 30px;
+  }
+
+  .hero {
+    background: url("img/banner.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 50vh;
+    width: 100vw;
+    font-size: 15px;
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+  .container .text p {
+    font-size: 18px;
+  }
+
+  .container .contain {
+    height: 75vh;
+  }
+
+  .contain .text {
+    width: 80%;
+  }
+
+  .contain .img {
+    display: none;
+  }
+
+  .container h1 {
+    font-size: 35px;
+  }
+
+  .container.products {
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 350px;
+    width: 60%;
+    margin: 5px;
+  }
+
+  .card img {
+    height: 200px;
+    width: 200px;
+    transition: 0.2s;
+  }
+
+  .brewing .contain {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .contain .left {
+    display: none;
+  }
+  .text.rght {
+    height: 100%;
+    width: 80%;
+  }
+  p.right {
+    margin-right: 15%;
+  }
+
+  .contact {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    mask-image: none;
+    font-size: 18px;
+    line-height: 10px;
+    background-attachment: fixed;
+  }
+
+  input,
+  textarea {
+    padding: 10px 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    margin: 10px 0px;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  footer {
+    height: 50vh;
+    width: 100%;
+    margin: 0px;
+    margin-top: 20vh;
+    position: relative;
+  }
+
+  p a {
+    font-size: 18px;
+    margin: 10px;
+  }
+  footer .para {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+  }
+}
